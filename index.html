@@ -496,10 +496,21 @@
     </footer>
 
     <script src="script.js"></script>
-    <script async src="https://api.lindy.ai/api/lindyEmbed/lindyEmbed.js?a=f482c212-8d8f-4e64-82f0-b8494a358af3" crossorigin="use-credentials"></script>
+      <div id="shipable_agent_chatbox"></div>
+  <script defer="defer" src="https://app.shipable.ai/agent-chat/chatbox.min.js">
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      window.AgentChatboxSDK.init({
+        container: "shipable_agent_chatbox",
+        paramKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      });
+    });
+  </script>
 </body>
 
 </html> 
+
 
 
 
